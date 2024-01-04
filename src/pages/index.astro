@@ -5,42 +5,39 @@ import NavItem from '../components/NavItem.astro';
 ---
 
 <Layout title="Portfolio - Logan Langdon">
-	<main>
+	<main >
 		<nav class="nav-container">
+			<div id="name"> Logan Langdon </div>
 			<!-- Include dark mode toggle -->
 			<nav class="nav-buttons">
-				<NavItem 
-					topic="Home"
-					href="./"
-				/>
-				<NavItem 
-					topic="About" 		
-					href="_blank"
-				/>
-				<NavItem 
-					topic="Projects" 	
-					href="_blank"
-				/>
-				<NavItem 
-					topic="Skills" 	
-					href="_blank"
-				/>
-				<NavItem 
-					topic="Contact" 	
-					href="_blank"
-				/>
+				<NavItem topic="Home"      	href="#"/>
+				<NavItem topic="About" 		href="#About"/>
+				<NavItem topic="Skills" 	href="#Skills"/>
+				<NavItem topic="Projects" 	href="#Projects"/>
+				<NavItem topic="Contact" 	href="#Contact"/>
 			</nav>
+			<div> Icons Dropdown </div>
 		</nav>
-		<h1>Hello there!</h1>
-		<p class="instructions">
-			About
+		<img 	src="../../public/assets/profile.jpg" 
+				id="landing-image"
+				alt="Logan langdon smiling at the camera"
+		/> 
+		<h1 id="landing-message"> Hello there!</h1>
+		<p id="About" class="instructions">About
+			<div> 
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat aliquet dui sed efficitur. Donec consequat urna eu magna egestas, aliquam molestie ex viverra. Aenean hendrerit eu leo quis rhoncus. Vestibulum lacinia libero nulla, congue ornare odio malesuada tristique. Integer turpis quam, fringilla ut purus eu, tristique posuere nulla. Sed sed ipsum posuere urna aliquet mollis eget a felis. Integer nec sodales dui, eget hendrerit urna. Curabitur venenatis, sapien nec congue blandit, nulla est convallis lectus, ut blandit est enim ut sapien. Pellentesque et urna mi. Aenean non egestas arcu. Vivamus rhoncus ac dui in vehicula. Ut a erat non velit rutrum facilisis. Ut aliquam dictum blandit. Aenean pulvinar leo id leo sagittis pulvinar. Nam a ultrices diam, ac porttitor ligula. Fusce vulputate fermentum enim, ullamcorper blandit elit.
+				Vestibulum pharetra a velit quis faucibus. Donec in nisl tortor. Fusce maximus augue quis mi tincidunt, sit amet mollis arcu maximus. Morbi id ligula vitae eros faucibus ultrices in ut arcu. Suspendisse nec sagittis ligula. Quisque fermentum justo id elit tristique pulvinar. Pellentesque vitae sagittis dui. Cras vitae eros hendrerit, interdum velit nec, vestibulum magna. Fusce sit amet bibendum risus, vel efficitur erat. Donec nec laoreet lorem. Donec convallis lacinia tortor eu euismod.
+				Aenean in posuere urna. In scelerisque, est ac porta rhoncus, purus nulla lacinia quam, non porta purus nibh lacinia enim. Ut aliquam turpis pretium erat vehicula ultrices. Vestibulum bibendum metus sed purus laoreet ornare. Cras vulputate imperdiet nibh, nec mattis lacus condimentum ac. Curabitur rhoncus purus ut velit vulputate, et varius ipsum eleifend. Quisque auctor, magna eu pellentesque posuere, nulla magna vulputate tortor, molestie laoreet dui eros pellentesque neque. Donec ut finibus justo, non pulvinar tortor. Sed sed massa vitae leo fermentum aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis enim diam, tristique non mauris non, venenatis sagittis elit. Fusce ultrices lobortis nibh, in eleifend arcu lacinia sed. Maecenas a nunc vel magna pretium efficitur ut in magna.
+			</div>
 		</p>
-		<p class="instructions">
-			Skills
+		<p id="Skills" class="instructions">Skills
+			<div> 
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat aliquet dui sed efficitur. Donec consequat urna eu magna egestas, aliquam molestie ex viverra. Aenean hendrerit eu leo quis rhoncus. Vestibulum lacinia libero nulla, congue ornare odio malesuada tristique. Integer turpis quam, fringilla ut purus eu, tristique posuere nulla. Sed sed ipsum posuere urna aliquet mollis eget a felis. Integer nec sodales dui, eget hendrerit urna. Curabitur venenatis, sapien nec congue blandit, nulla est convallis lectus, ut blandit est enim ut sapien. Pellentesque et urna mi. Aenean non egestas arcu. Vivamus rhoncus ac dui in vehicula. Ut a erat non velit rutrum facilisis. Ut aliquam dictum blandit. Aenean pulvinar leo id leo sagittis pulvinar. Nam a ultrices diam, ac porttitor ligula. Fusce vulputate fermentum enim, ullamcorper blandit elit.
+				Vestibulum pharetra a velit quis faucibus. Donec in nisl tortor. Fusce maximus augue quis mi tincidunt, sit amet mollis arcu maximus. Morbi id ligula vitae eros faucibus ultrices in ut arcu. Suspendisse nec sagittis ligula. Quisque fermentum justo id elit tristique pulvinar. Pellentesque vitae sagittis dui. Cras vitae eros hendrerit, interdum velit nec, vestibulum magna. Fusce sit amet bibendum risus, vel efficitur erat. Donec nec laoreet lorem. Donec convallis lacinia tortor eu euismod.
+				Aenean in posuere urna. In scelerisque, est ac porta rhoncus, purus nulla lacinia quam, non porta purus nibh lacinia enim. Ut aliquam turpis pretium erat vehicula ultrices. Vestibulum bibendum metus sed purus laoreet ornare. Cras vulputate imperdiet nibh, nec mattis lacus condimentum ac. Curabitur rhoncus purus ut velit vulputate, et varius ipsum eleifend. Quisque auctor, magna eu pellentesque posuere, nulla magna vulputate tortor, molestie laoreet dui eros pellentesque neque. Donec ut finibus justo, non pulvinar tortor. Sed sed massa vitae leo fermentum aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis enim diam, tristique non mauris non, venenatis sagittis elit. Fusce ultrices lobortis nibh, in eleifend arcu lacinia sed. Maecenas a nunc vel magna pretium efficitur ut in magna.
+			</div>
 		</p>
-		<p class="instructions">
-			Projects
-		</p>
+		<p id="Projects" class="instructions">Projects</p>
 		<ul role="list" class="link-card-grid"></ul>
 			<Card
 				href="https://docs.astro.build/"
@@ -53,24 +50,28 @@ import NavItem from '../components/NavItem.astro';
 				body="Notetaking UI"
 			/>
 		</ul>
-		<p class="instructions"></p>
+		<p id="Contact" class="instructions">
 			Contact
+			<div>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat aliquet dui sed efficitur. Donec consequat urna eu magna egestas, aliquam molestie ex viverra. Aenean hendrerit eu leo quis rhoncus. Vestibulum lacinia libero nulla, congue ornare odio malesuada tristique. Integer turpis quam, fringilla ut purus eu, tristique posuere nulla. Sed sed ipsum posuere urna aliquet mollis eget a felis. Integer nec sodales dui, eget hendrerit urna. Curabitur venenatis, sapien nec congue blandit, nulla est convallis lectus, ut blandit est enim ut sapien. Pellentesque et urna mi. Aenean non egestas arcu. Vivamus rhoncus ac dui in vehicula. Ut a erat non velit rutrum facilisis. Ut aliquam dictum blandit. Aenean pulvinar leo id leo sagittis pulvinar. Nam a ultrices diam, ac porttitor ligula. Fusce vulputate fermentum enim, ullamcorper blandit elit.
+				Vestibulum pharetra a velit quis faucibus. Donec in nisl tortor. Fusce maximus augue quis mi tincidunt, sit amet mollis arcu maximus. Morbi id ligula vitae eros faucibus ultrices in ut arcu. Suspendisse nec sagittis ligula. Quisque fermentum justo id elit tristique pulvinar. Pellentesque vitae sagittis dui. Cras vitae eros hendrerit, interdum velit nec, vestibulum magna. Fusce sit amet bibendum risus, vel efficitur erat. Donec nec laoreet lorem. Donec convallis lacinia tortor eu euismod.
+				Aenean in posuere urna. In scelerisque, est ac porta rhoncus, purus nulla lacinia quam, non porta purus nibh lacinia enim. Ut aliquam turpis pretium erat vehicula ultrices. Vestibulum bibendum metus sed purus laoreet ornare. Cras vulputate imperdiet nibh, nec mattis lacus condimentum ac. Curabitur rhoncus purus ut velit vulputate, et varius ipsum eleifend. Quisque auctor, magna eu pellentesque posuere, nulla magna vulputate tortor, molestie laoreet dui eros pellentesque neque. Donec ut finibus justo, non pulvinar tortor. Sed sed massa vitae leo fermentum aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis enim diam, tristique non mauris non, venenatis sagittis elit. Fusce ultrices lobortis nibh, in eleifend arcu lacinia sed. Maecenas a nunc vel magna pretium efficitur ut in magna.
+			</div>
 		</p>
-		<h2>
-			
-		</h2>
+
 	</main>
 </Layout>
 
 <style>
 	main {
 		margin: auto;
-		padding: 1rem;
-		width: 800px;
+		width: 1000px;
 		max-width: calc(100% - 2rem);
+		padding: 1rem;
 		color: white;
 		font-size: 20px;
 		line-height: 1.6;
+		background-color: rgb(21, 21, 21);
 		/*background-color: rgb(255,0,0);*/
 	}
 
@@ -119,21 +120,78 @@ import NavItem from '../components/NavItem.astro';
 	}
 
 	.nav-container {
-
+		display: flex;
+		flex-direction: row nowrap;
+		justify-items: stretch;
+		align-items: stretch;
+		justify-content: space-between;
+		padding: 0 0 3rem 0;
 	}
 
 	.nav-buttons {
-		margin:auto;
+		margin: 0 0 0 18rem;
 		display: flex;
 		flex-direction: row nowrap;
 		width: 25rem;
 		justify-content: center;
 		justify-items: stretch;
-		flex-basis: auto;
+		position:fixed;
+		
 		gap: 0.25rem;
 		background-color: rgb(1, 50, 9);
 		border-radius: 25px;
 		border: 0.15rem solid rgb(var(--accent));
 		padding: 0.25rem;
+		z-index:5;
+		
+		/* opacity: 0.5; */
+		/* top: -1rem; */
+
+		transition: top 1s cubic-bezier(0.22,1,0.36,1);
+	}
+	
+	/* .nav-buttons:is(:hover,:focus-within) {
+		opacity: 1;
+		top: 1rem;
+	} */
+	
+
+
+
+	@keyframes horizontal-swipe {
+		from {
+			opacity: 0;
+			margin-left: -15rem;
+		}
+		to {
+			
+			opacity: 1;
+			margin-left:40rem;
+		}
+	}
+	@keyframes image-swipe{
+		from {
+			opacity: 0;
+			margin-left: 0;
+		}
+		to {
+			
+			opacity: 1;
+			margin-left:42rem;
+		}
+	}
+
+	#landing-image {
+		margin-left: 42rem;
+		animation-name: image-swipe;
+		animation-duration: 1s;
+		animation-timing-function: cubic-bezier(0.25,1,0.5,1);
+	}
+
+	#landing-message {
+		margin-left:40rem;
+		animation-name: horizontal-swipe;
+		animation-duration: 1s;
+		animation-timing-function: cubic-bezier(0.25,1,0.5,1);
 	}
 </style>
