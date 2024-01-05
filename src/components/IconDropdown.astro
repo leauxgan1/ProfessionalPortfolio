@@ -1,0 +1,54 @@
+---
+// interface Props {
+
+// }
+
+---
+
+<div id="dropdown">
+    <button onclick="document.getElementById('content').style.visibility = 'visible'">
+        #
+    </button>
+    <div id="content">
+        <a id="github"  href="">github</a>
+        <a id="X"       href="">x</a>
+        <a id="mastodon"href="">mastodon</a>
+    </div>
+</div>
+
+<style>
+    #dropdown {
+        display: flex;
+        flex-direction: column;
+        /* position: fixed; */
+        /* margin: 0 0 0 55rem; */
+    }
+
+    #content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    button {
+        border: 0.15rem solid rgb(var(--accent));
+        border-radius: 10px;
+        width: 2.5rem;
+        height: 2.5rem;
+        color: white;
+        opacity: 0.75;
+        font-size: 1rem;
+        background-color: rgb(1, 50, 9);
+        cursor: pointer;
+        transition: background-color 0.5s cubic-bezier(0.2,1,0.2,1);
+    }
+
+    button:hover {
+        background-color: rgb(var(--accent-dark));
+    }
+    
+    a {
+        visibility: hidden;
+    }
+</style>
+
+
