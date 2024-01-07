@@ -25,6 +25,7 @@ const {topic, href} = Astro.props;
         transition: background-color 0.5s cubic-bezier(0.5,1,0.5,1);
         transition: opacity 0.5s cubic-bezier(0.5,1,0.5,1);
         opacity: 0.75;
+        scroll-behavior: smooth;
     }
     a:is(:hover,:focus-within) {
         background-color: rgb(var(--accent-dark));

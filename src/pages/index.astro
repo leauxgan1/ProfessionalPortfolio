@@ -8,7 +8,11 @@ import IconDropdown from "../components/IconDropdown.astro"
 <Layout title="Portfolio - Logan Langdon">
 	<main >
 		<nav class="nav-container">
-			<div id="name"> Logan Langdon </div>
+			<div id="name"> 
+				<a href="" style="text-decoration: none; color: inherit;">
+					Logan Langdon
+				</a> 
+			</div>
 			<!-- Include dark mode toggle -->
 			<nav class="nav-buttons">
 				<NavItem topic="Home"      	href="#"/>
@@ -19,51 +23,60 @@ import IconDropdown from "../components/IconDropdown.astro"
 			</nav>
 			<IconDropdown />
 		</nav>
-		<img 	src="../../public/assets/profile.jpg" 
+		<img 	src="../../assets/profile.jpg" 
 				id="landing-image"
 				alt="Logan langdon smiling at the camera"
 		/> 
-		<h1 id="landing-message"> Hello there!</h1>
-		<p id="About" class="instructions">About
-			<div> 
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat aliquet dui sed efficitur. Donec consequat urna eu magna egestas, aliquam molestie ex viverra. Aenean hendrerit eu leo quis rhoncus. Vestibulum lacinia libero nulla, congue ornare odio malesuada tristique. Integer turpis quam, fringilla ut purus eu, tristique posuere nulla. Sed sed ipsum posuere urna aliquet mollis eget a felis. Integer nec sodales dui, eget hendrerit urna. Curabitur venenatis, sapien nec congue blandit, nulla est convallis lectus, ut blandit est enim ut sapien. Pellentesque et urna mi. Aenean non egestas arcu. Vivamus rhoncus ac dui in vehicula. Ut a erat non velit rutrum facilisis. Ut aliquam dictum blandit. Aenean pulvinar leo id leo sagittis pulvinar. Nam a ultrices diam, ac porttitor ligula. Fusce vulputate fermentum enim, ullamcorper blandit elit.
-				Vestibulum pharetra a velit quis faucibus. Donec in nisl tortor. Fusce maximus augue quis mi tincidunt, sit amet mollis arcu maximus. Morbi id ligula vitae eros faucibus ultrices in ut arcu. Suspendisse nec sagittis ligula. Quisque fermentum justo id elit tristique pulvinar. Pellentesque vitae sagittis dui. Cras vitae eros hendrerit, interdum velit nec, vestibulum magna. Fusce sit amet bibendum risus, vel efficitur erat. Donec nec laoreet lorem. Donec convallis lacinia tortor eu euismod.
-				Aenean in posuere urna. In scelerisque, est ac porta rhoncus, purus nulla lacinia quam, non porta purus nibh lacinia enim. Ut aliquam turpis pretium erat vehicula ultrices. Vestibulum bibendum metus sed purus laoreet ornare. Cras vulputate imperdiet nibh, nec mattis lacus condimentum ac. Curabitur rhoncus purus ut velit vulputate, et varius ipsum eleifend. Quisque auctor, magna eu pellentesque posuere, nulla magna vulputate tortor, molestie laoreet dui eros pellentesque neque. Donec ut finibus justo, non pulvinar tortor. Sed sed massa vitae leo fermentum aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis enim diam, tristique non mauris non, venenatis sagittis elit. Fusce ultrices lobortis nibh, in eleifend arcu lacinia sed. Maecenas a nunc vel magna pretium efficitur ut in magna.
-			</div>
-		</p>
-		<p id="Skills" class="instructions">Skills
-			<div> 
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat aliquet dui sed efficitur. Donec consequat urna eu magna egestas, aliquam molestie ex viverra. Aenean hendrerit eu leo quis rhoncus. Vestibulum lacinia libero nulla, congue ornare odio malesuada tristique. Integer turpis quam, fringilla ut purus eu, tristique posuere nulla. Sed sed ipsum posuere urna aliquet mollis eget a felis. Integer nec sodales dui, eget hendrerit urna. Curabitur venenatis, sapien nec congue blandit, nulla est convallis lectus, ut blandit est enim ut sapien. Pellentesque et urna mi. Aenean non egestas arcu. Vivamus rhoncus ac dui in vehicula. Ut a erat non velit rutrum facilisis. Ut aliquam dictum blandit. Aenean pulvinar leo id leo sagittis pulvinar. Nam a ultrices diam, ac porttitor ligula. Fusce vulputate fermentum enim, ullamcorper blandit elit.
-				Vestibulum pharetra a velit quis faucibus. Donec in nisl tortor. Fusce maximus augue quis mi tincidunt, sit amet mollis arcu maximus. Morbi id ligula vitae eros faucibus ultrices in ut arcu. Suspendisse nec sagittis ligula. Quisque fermentum justo id elit tristique pulvinar. Pellentesque vitae sagittis dui. Cras vitae eros hendrerit, interdum velit nec, vestibulum magna. Fusce sit amet bibendum risus, vel efficitur erat. Donec nec laoreet lorem. Donec convallis lacinia tortor eu euismod.
-				Aenean in posuere urna. In scelerisque, est ac porta rhoncus, purus nulla lacinia quam, non porta purus nibh lacinia enim. Ut aliquam turpis pretium erat vehicula ultrices. Vestibulum bibendum metus sed purus laoreet ornare. Cras vulputate imperdiet nibh, nec mattis lacus condimentum ac. Curabitur rhoncus purus ut velit vulputate, et varius ipsum eleifend. Quisque auctor, magna eu pellentesque posuere, nulla magna vulputate tortor, molestie laoreet dui eros pellentesque neque. Donec ut finibus justo, non pulvinar tortor. Sed sed massa vitae leo fermentum aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis enim diam, tristique non mauris non, venenatis sagittis elit. Fusce ultrices lobortis nibh, in eleifend arcu lacinia sed. Maecenas a nunc vel magna pretium efficitur ut in magna.
-			</div>
-		</p>
-		<p id="Projects" class="instructions">Projects</p>
-		<ul role="list" class="link-card-grid"></ul>
-			<Card
-				href="https://docs.astro.build/"
-				title="Project 1"
-				body="Go Rest API"
-			/>
-			<Card
-				href="https://docs.astro.build/"
-				title="Project 2"
-				body="Notetaking UI"
-			/>
-		</ul>
-		<p id="Contact" class="instructions">
-			Contact
-			<div>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat aliquet dui sed efficitur. Donec consequat urna eu magna egestas, aliquam molestie ex viverra. Aenean hendrerit eu leo quis rhoncus. Vestibulum lacinia libero nulla, congue ornare odio malesuada tristique. Integer turpis quam, fringilla ut purus eu, tristique posuere nulla. Sed sed ipsum posuere urna aliquet mollis eget a felis. Integer nec sodales dui, eget hendrerit urna. Curabitur venenatis, sapien nec congue blandit, nulla est convallis lectus, ut blandit est enim ut sapien. Pellentesque et urna mi. Aenean non egestas arcu. Vivamus rhoncus ac dui in vehicula. Ut a erat non velit rutrum facilisis. Ut aliquam dictum blandit. Aenean pulvinar leo id leo sagittis pulvinar. Nam a ultrices diam, ac porttitor ligula. Fusce vulputate fermentum enim, ullamcorper blandit elit.
-				Vestibulum pharetra a velit quis faucibus. Donec in nisl tortor. Fusce maximus augue quis mi tincidunt, sit amet mollis arcu maximus. Morbi id ligula vitae eros faucibus ultrices in ut arcu. Suspendisse nec sagittis ligula. Quisque fermentum justo id elit tristique pulvinar. Pellentesque vitae sagittis dui. Cras vitae eros hendrerit, interdum velit nec, vestibulum magna. Fusce sit amet bibendum risus, vel efficitur erat. Donec nec laoreet lorem. Donec convallis lacinia tortor eu euismod.
-				Aenean in posuere urna. In scelerisque, est ac porta rhoncus, purus nulla lacinia quam, non porta purus nibh lacinia enim. Ut aliquam turpis pretium erat vehicula ultrices. Vestibulum bibendum metus sed purus laoreet ornare. Cras vulputate imperdiet nibh, nec mattis lacus condimentum ac. Curabitur rhoncus purus ut velit vulputate, et varius ipsum eleifend. Quisque auctor, magna eu pellentesque posuere, nulla magna vulputate tortor, molestie laoreet dui eros pellentesque neque. Donec ut finibus justo, non pulvinar tortor. Sed sed massa vitae leo fermentum aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis enim diam, tristique non mauris non, venenatis sagittis elit. Fusce ultrices lobortis nibh, in eleifend arcu lacinia sed. Maecenas a nunc vel magna pretium efficitur ut in magna.
-			</div>
-		</p>
+		<div id="landing-message">
+			<h1 class="landing-text-h1"> Hello there!</h1>
+			<h2 class="landing-text-h2"> My name is Logan.</h2>
+		</div>
+
+		<div style="scroll-behavior: smooth;">
+			<p id="About" class="section">About
+				<div> 
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat aliquet dui sed efficitur. Donec consequat urna eu magna egestas, aliquam molestie ex viverra. Aenean hendrerit eu leo quis rhoncus. Vestibulum lacinia libero nulla, congue ornare odio malesuada tristique. Integer turpis quam, fringilla ut purus eu, tristique posuere nulla. Sed sed ipsum posuere urna aliquet mollis eget a felis. Integer nec sodales dui, eget hendrerit urna. Curabitur venenatis, sapien nec congue blandit, nulla est convallis lectus, ut blandit est enim ut sapien. Pellentesque et urna mi. Aenean non egestas arcu. Vivamus rhoncus ac dui in vehicula. Ut a erat non velit rutrum facilisis. Ut aliquam dictum blandit. Aenean pulvinar leo id leo sagittis pulvinar. Nam a ultrices diam, ac porttitor ligula. Fusce vulputate fermentum enim, ullamcorper blandit elit.
+					Vestibulum pharetra a velit quis faucibus. Donec in nisl tortor. Fusce maximus augue quis mi tincidunt, sit amet mollis arcu maximus. Morbi id ligula vitae eros faucibus ultrices in ut arcu. Suspendisse nec sagittis ligula. Quisque fermentum justo id elit tristique pulvinar. Pellentesque vitae sagittis dui. Cras vitae eros hendrerit, interdum velit nec, vestibulum magna. Fusce sit amet bibendum risus, vel efficitur erat. Donec nec laoreet lorem. Donec convallis lacinia tortor eu euismod.
+					Aenean in posuere urna. In scelerisque, est ac porta rhoncus, purus nulla lacinia quam, non porta purus nibh lacinia enim. Ut aliquam turpis pretium erat vehicula ultrices. Vestibulum bibendum metus sed purus laoreet ornare. Cras vulputate imperdiet nibh, nec mattis lacus condimentum ac. Curabitur rhoncus purus ut velit vulputate, et varius ipsum eleifend. Quisque auctor, magna eu pellentesque posuere, nulla magna vulputate tortor, molestie laoreet dui eros pellentesque neque. Donec ut finibus justo, non pulvinar tortor. Sed sed massa vitae leo fermentum aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis enim diam, tristique non mauris non, venenatis sagittis elit. Fusce ultrices lobortis nibh, in eleifend arcu lacinia sed. Maecenas a nunc vel magna pretium efficitur ut in magna.
+				</div>
+			</p>
+			<p id="Skills" class="section">Skills
+				<div> 
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat aliquet dui sed efficitur. Donec consequat urna eu magna egestas, aliquam molestie ex viverra. Aenean hendrerit eu leo quis rhoncus. Vestibulum lacinia libero nulla, congue ornare odio malesuada tristique. Integer turpis quam, fringilla ut purus eu, tristique posuere nulla. Sed sed ipsum posuere urna aliquet mollis eget a felis. Integer nec sodales dui, eget hendrerit urna. Curabitur venenatis, sapien nec congue blandit, nulla est convallis lectus, ut blandit est enim ut sapien. Pellentesque et urna mi. Aenean non egestas arcu. Vivamus rhoncus ac dui in vehicula. Ut a erat non velit rutrum facilisis. Ut aliquam dictum blandit. Aenean pulvinar leo id leo sagittis pulvinar. Nam a ultrices diam, ac porttitor ligula. Fusce vulputate fermentum enim, ullamcorper blandit elit.
+					Vestibulum pharetra a velit quis faucibus. Donec in nisl tortor. Fusce maximus augue quis mi tincidunt, sit amet mollis arcu maximus. Morbi id ligula vitae eros faucibus ultrices in ut arcu. Suspendisse nec sagittis ligula. Quisque fermentum justo id elit tristique pulvinar. Pellentesque vitae sagittis dui. Cras vitae eros hendrerit, interdum velit nec, vestibulum magna. Fusce sit amet bibendum risus, vel efficitur erat. Donec nec laoreet lorem. Donec convallis lacinia tortor eu euismod.
+					Aenean in posuere urna. In scelerisque, est ac porta rhoncus, purus nulla lacinia quam, non porta purus nibh lacinia enim. Ut aliquam turpis pretium erat vehicula ultrices. Vestibulum bibendum metus sed purus laoreet ornare. Cras vulputate imperdiet nibh, nec mattis lacus condimentum ac. Curabitur rhoncus purus ut velit vulputate, et varius ipsum eleifend. Quisque auctor, magna eu pellentesque posuere, nulla magna vulputate tortor, molestie laoreet dui eros pellentesque neque. Donec ut finibus justo, non pulvinar tortor. Sed sed massa vitae leo fermentum aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis enim diam, tristique non mauris non, venenatis sagittis elit. Fusce ultrices lobortis nibh, in eleifend arcu lacinia sed. Maecenas a nunc vel magna pretium efficitur ut in magna.
+				</div>
+			</p>
+			<p id="Projects" class="section">Projects</p>
+			<ul role="list" class="link-card-grid"></ul>
+				<Card
+					href="https://docs.astro.build/"
+					title="Project 1"
+					body="Go Rest API"
+				/>
+				<Card
+					href="https://docs.astro.build/"
+					title="Project 2"
+					body="Notetaking UI"
+				/>
+			</ul>
+			<p id="Contact" class="section">
+				Contact
+				<div>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse placerat aliquet dui sed efficitur. Donec consequat urna eu magna egestas, aliquam molestie ex viverra. Aenean hendrerit eu leo quis rhoncus. Vestibulum lacinia libero nulla, congue ornare odio malesuada tristique. Integer turpis quam, fringilla ut purus eu, tristique posuere nulla. Sed sed ipsum posuere urna aliquet mollis eget a felis. Integer nec sodales dui, eget hendrerit urna. Curabitur venenatis, sapien nec congue blandit, nulla est convallis lectus, ut blandit est enim ut sapien. Pellentesque et urna mi. Aenean non egestas arcu. Vivamus rhoncus ac dui in vehicula. Ut a erat non velit rutrum facilisis. Ut aliquam dictum blandit. Aenean pulvinar leo id leo sagittis pulvinar. Nam a ultrices diam, ac porttitor ligula. Fusce vulputate fermentum enim, ullamcorper blandit elit.
+					Vestibulum pharetra a velit quis faucibus. Donec in nisl tortor. Fusce maximus augue quis mi tincidunt, sit amet mollis arcu maximus. Morbi id ligula vitae eros faucibus ultrices in ut arcu. Suspendisse nec sagittis ligula. Quisque fermentum justo id elit tristique pulvinar. Pellentesque vitae sagittis dui. Cras vitae eros hendrerit, interdum velit nec, vestibulum magna. Fusce sit amet bibendum risus, vel efficitur erat. Donec nec laoreet lorem. Donec convallis lacinia tortor eu euismod.
+					Aenean in posuere urna. In scelerisque, est ac porta rhoncus, purus nulla lacinia quam, non porta purus nibh lacinia enim. Ut aliquam turpis pretium erat vehicula ultrices. Vestibulum bibendum metus sed purus laoreet ornare. Cras vulputate imperdiet nibh, nec mattis lacus condimentum ac. Curabitur rhoncus purus ut velit vulputate, et varius ipsum eleifend. Quisque auctor, magna eu pellentesque posuere, nulla magna vulputate tortor, molestie laoreet dui eros pellentesque neque. Donec ut finibus justo, non pulvinar tortor. Sed sed massa vitae leo fermentum aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis enim diam, tristique non mauris non, venenatis sagittis elit. Fusce ultrices lobortis nibh, in eleifend arcu lacinia sed. Maecenas a nunc vel magna pretium efficitur ut in magna.
+				</div>
+			</p>
+		</div>
 
 	</main>
 </Layout>
 
 <style>
+	html, body { 
+      scroll-behavior: smooth;
+    }
 	main {
 		margin: auto;
 		width: 1000px;
@@ -92,7 +105,7 @@ import IconDropdown from "../components/IconDropdown.astro"
 		background-position: 0%;
 	}
 
-	.instructions {
+	.section {
 		margin-bottom: 2rem;
 		border: 1px solid rgba(var(--accent-light), 25%);
 		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
@@ -100,7 +113,7 @@ import IconDropdown from "../components/IconDropdown.astro"
 		border-radius: 8px;
 	}
 
-	.instructions code {
+	.section code {
 		font-size: 0.8em;
 		font-weight: bold;
 		background: rgba(var(--accent-light), 12%);
@@ -109,7 +122,7 @@ import IconDropdown from "../components/IconDropdown.astro"
 		padding: 0.3em 0.4em;
 	}
 
-	.instructions strong {
+	.section strong {
 		color: rgb(var(--accent-light));
 	}
 
@@ -136,7 +149,7 @@ import IconDropdown from "../components/IconDropdown.astro"
 		width: 25rem;
 		justify-content: center;
 		justify-items: stretch;
-		position:fixed;
+		position: fixed;
 		
 		gap: 0.25rem;
 		background-color: rgb(1, 50, 9);
@@ -145,32 +158,45 @@ import IconDropdown from "../components/IconDropdown.astro"
 		padding: 0.25rem;
 		z-index:5;
 		
-		/* opacity: 0.5; */
-		/* top: -1rem; */
+		opacity: 0.5; 
+		top: -1rem;
 
-		transition: top 1s cubic-bezier(0.22,1,0.36,1);
+		transition: transform 1s cubic-bezier(0.22,1,0.36,1);
+		/* transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1); */
+
 	}
 	
-	/* .nav-buttons:is(:hover,:focus-within) {
+	.nav-buttons:is(:hover,:focus-within) {
 		opacity: 1;
-		top: 1rem;
-	} */
+		transform:translate(0,2rem);
+	}
 	
 
-
-
-	@keyframes horizontal-swipe {
+	@keyframes horizontal-swipe-h1 {
 		from {
 			opacity: 0;
-			margin-left: -15rem;
+			transform: translateX(-48rem);
 		}
 		to {
 			
 			opacity: 1;
-			margin-left:40rem;
+			transform: translateX(-12rem);
 		}
 	}
-	@keyframes image-swipe{
+
+	@keyframes horizontal-swipe-h2 {
+		from {
+			opacity: 0;
+			transform: translateX(-28rem);
+		}
+		to {
+			
+			opacity: 1;
+			transform: translateX(9rem);
+		}
+	}
+
+	@keyframes image-swipe {
 		from {
 			opacity: 0;
 			margin-left: 0;
@@ -178,21 +204,43 @@ import IconDropdown from "../components/IconDropdown.astro"
 		to {
 			
 			opacity: 1;
-			margin-left:42rem;
+			margin-left:38rem;
 		}
 	}
 
 	#landing-image {
-		margin-left: 42rem;
+		position:absolute;
+		margin-left: 38rem;
 		animation-name: image-swipe;
+		animation-duration: 1s;
+		animation-timing-function: cubic-bezier(0.25,1,0.5,1);
+		border-radius: 25px;
+		max-width: 20rem;
+		max-height: 30rem;
+	}
+
+	.landing-text-h1 {
+		transform: translateX(-12rem);
+		animation-name: horizontal-swipe-h1;
+		animation-duration: 1s;
+		animation-timing-function: cubic-bezier(0.25,1,0.5,1);
+	}
+	
+	.landing-text-h2 {
+		transform: translateX(9rem);
+		animation-name: horizontal-swipe-h2;
 		animation-duration: 1s;
 		animation-timing-function: cubic-bezier(0.25,1,0.5,1);
 	}
 
 	#landing-message {
-		margin-left:40rem;
-		animation-name: horizontal-swipe;
-		animation-duration: 1s;
-		animation-timing-function: cubic-bezier(0.25,1,0.5,1);
+		padding-bottom: 10rem;
 	}
+
+
+	.section-container {
+		scroll-behavior: smooth !important;
+	}
+
+
 </style>

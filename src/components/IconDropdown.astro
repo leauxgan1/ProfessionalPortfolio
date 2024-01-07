@@ -10,23 +10,30 @@
         #
     </button>
     <div id="content">
-        <a id="github"  href="">github</a>
-        <a id="X"       href="">x</a>
-        <a id="mastodon"href="">mastodon</a>
+        <a class="icon-link"    id="github"  href="">g</a>
+        <a class="icon-link"    id="X"       href="">x</a>
+        <a class="icon-link"    id="mastodon"href="">m</a>
     </div>
 </div>
 
 <style>
     #dropdown {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         /* position: fixed; */
         /* margin: 0 0 0 55rem; */
     }
 
     #content {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+    }
+
+    .icon-link {
+        text-decoration: none;
+        color: inherit;
+        background-color: rgb(var(--accent-dark));
+        padding: 0.5rem;
     }
 
     button {
@@ -39,15 +46,24 @@
         font-size: 1rem;
         background-color: rgb(1, 50, 9);
         cursor: pointer;
+        transform: translateX(5rem);
         transition: background-color 0.5s cubic-bezier(0.2,1,0.2,1);
+        transition: transform 0.5s cubic-bezier(0.2,1,0.2,1);
     }
 
     button:hover {
         background-color: rgb(var(--accent-dark));
+        transform: translateX(-5rem);
     }
     
+    /* button::after:hover {
+        opacity: 1;
+    } */
+    
     a {
-        visibility: hidden;
+        cursor:default;
+        pointer-events: none;
+        opacity: 0;
     }
 </style>
 
